@@ -7,13 +7,13 @@ import "./js/scrollTop.js";
 import Form from "./js/Form.js";
 
 const links = {
-    home: "/",
-    omgastro: "/omgastro",
-    nyheder: "/nyheder",
-    menu: "/menu",
-    galleri: "/galleri",
-    team: "/team",
-    kontakt: "/kontakt",
+    home: "./",
+    omgastro: "./omgastro",
+    nyheder: "./nyheder",
+    menu: "./menu",
+    galleri: "./galleri",
+    team: "./team",
+    kontakt: "./kontakt",
 };
 document.body.insertAdjacentHTML("afterbegin", headerTemplate(links));
 document.body.insertAdjacentHTML("beforeend", footerTemplate());
