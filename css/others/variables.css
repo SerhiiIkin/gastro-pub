@@ -1,0 +1,52 @@
+:root {
+    /* Colors: */
+    ---8a837d-txt-dark: #8a837d;
+    ---8a837d-txt-dark-hover: #8a837d;
+    ---ccc4bc-info-txt: #ccc4bc;
+    ---ccc4bc-info-txt-hover: #837c74;
+    ---2e2925-site-background: #2e2925;
+    ---2e2925-site-background-hover: #554c45;
+    ---211e1b-dark-bagcground: #211e1b;
+    ---211e1b-dark-bagcground-opacity: #211e1beb;
+    ---f1b356-btn: #f1b356;
+    ---f1b356-btn-hover: #eb9e2a;
+    --unnamed-color-000000: #000;
+    --unnamed-color-000000-hover: #323232;
+    --unnamed-color-ffffff: #ffffff;
+    --unnamed-color-ffffff-hover: #edf3c7;
+
+    /* Font/text values */
+    --unnamed-font-family-merriweather: "Merriweather";
+    --unnamed-font-family-crimson-pro: "Crimson Pro";
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-style-italic: italic;
+    --unnamed-font-weight-bold: bold;
+    --unnamed-font-weight-light: 300;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-14: 14px;
+    --unnamed-font-size-16: 16px;
+    --unnamed-font-size-18: 18px;
+    --unnamed-font-size-22: 22px;
+    --unnamed-font-size-24: 24px;
+    --unnamed-font-size-25: 25px;
+    --unnamed-font-size-26: 26px;
+    --unnamed-font-size-30: 30px;
+    --unnamed-font-size-36: 36px;
+    --unnamed-font-size-48: 48px;
+    --unnamed-font-size-84: 84px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-character-spacing-0-44: 0.44px;
+    --unnamed-character-spacing-0-45: 0.45px;
+    --unnamed-character-spacing-0-35: 0.35px;
+    --unnamed-line-spacing-16: 16px;
+    --unnamed-line-spacing-20: 20px;
+    --unnamed-line-spacing-25: 25px;
+    --unnamed-line-spacing-28: 28px;
+    --unnamed-line-spacing-30: 30px;
+    --unnamed-line-spacing-31: 31px;
+    --unnamed-line-spacing-32: 32px;
+    --unnamed-line-spacing-33: 33px;
+    --unnamed-line-spacing-38: 38px;
+    --unnamed-line-spacing-60: 60px;
+    --unnamed-line-spacing-106: 106px;
+}

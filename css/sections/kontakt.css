@@ -1,0 +1,97 @@
+.kontakt {
+    background: var(---2e2925-site-background);
+    padding-block: 65px;
+}
+.kontakt__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    @media (min-width: 1020px) {
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 20px;
+    }
+}
+.kontakt__form {
+    max-width: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media (min-width: 1020px) {
+        flex-basis: 50%;
+    }
+
+    input,
+    textarea {
+        color: var(---ccc4bc-info-txt);
+        border: 1px solid var(---ccc4bc-info-txt);
+    }
+
+    button {
+        align-self: start;
+        padding: 17px 65px;
+    }
+}
+.kontakt__title {
+    font: var(--unnamed-font-weight-bold) var(--unnamed-font-size-22) /
+        var(--unnamed-line-spacing-20) var(--unnamed-font-family-merriweather);
+    letter-spacing: var(--unnamed-character-spacing-0-44);
+    color: var(--unnamed-color-ffffff);
+}
+.kontakt__description {
+    font: var(--unnamed-font-weight-bold) var(--unnamed-font-size-18) /
+        var(--unnamed-line-spacing-20) var(--unnamed-font-family-crimson-pro);
+    letter-spacing: var(--unnamed-character-spacing-0-45);
+    color: var(---ccc4bc-info-txt);
+}
+
+.kontakt__info {
+    @media (min-width: 1020px) {
+        flex-basis: 50%;
+    }
+    svg {
+        fill: var(---f1b356-btn);
+        width: 50px;
+    }
+}
+.kontakt__row-wrapper {
+    padding-bottom: 20px;
+    color: var(---ccc4bc-info-txt);
+    &:has(a:hover) {
+        svg {
+            fill: var(---f1b356-btn-hover);
+        }
+    }
+}
+
+.kontakt__row-wrapper--tid {
+    display: flex;
+    column-gap: 40px;
+}
+
+.kontakt__adress,
+.kontakt__telefon,
+.kontakt__tid {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-bold) var(--unnamed-font-size-26) /
+        var(--unnamed-line-spacing-33) var(--unnamed-font-family-merriweather);
+    padding-left: 40px;
+    @media (min-width: 1281px) {
+        &:is(a):hover {
+            color: var(---ccc4bc-info-txt-hover);
+        }
+    }
+}
+
+.kontakt__telefon {
+}
+
+.kontakt__tid {
+    padding: 0;
+}
+.kontakt__tid-frokost {
+    font: var(--unnamed-font-weight-bold) var(--unnamed-font-size-18) /
+        var(--unnamed-line-spacing-20) var(--unnamed-font-family-crimson-pro);
+    letter-spacing: var(--unnamed-character-spacing-0-45);
+}

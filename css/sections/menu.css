@@ -1,0 +1,79 @@
+.menu {
+    background: var(---2e2925-site-background);
+    padding-block: 65px;
+    color: var(--unnamed-color-ffffff);
+    font-family: var(--unnamed-font-family-merriweather);
+}
+.menu__wrapper {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    @media (min-width: 768px) {
+        grid-template-columns: 200px 1fr;
+        column-gap: 60px;
+        row-gap: 30px;
+    }
+}
+.menu__img {
+    @media (min-width: 768px) {
+        grid-column: 1;
+    }
+}
+.menu__category {
+    @media (min-width: 768px) {
+        grid-column: 2;
+    }
+}
+.menu__category--supper {
+    grid-row: 2;
+    @media (min-width: 768px) {
+        grid-row: 1;
+    }
+}
+.menu__category--salater {
+    grid-row: 4;
+    @media (min-width: 768px) {
+        grid-row: 2;
+    }
+}
+.menu__category--hovedretter {
+}
+.menu__subtitle {
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-48);
+    line-height: var(--unnamed-line-spacing-60);
+    padding-bottom: 50px;
+}
+.menu__ret {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-block: 35px;
+    gap: 10px;
+    border-top: 1px solid var(---ccc4bc-info-txt);
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 120px;
+    }
+    &:last-child {
+        border-bottom: 1px solid var(---ccc4bc-info-txt);
+    }
+}
+.menu__name,
+.menu__price {
+    font-size: var(--unnamed-font-size-22);
+    line-height: var(--unnamed-line-spacing-28);
+    letter-spacing: var(--unnamed-character-spacing-0-44);
+}
+
+.menu__price {
+    @media (min-width: 768px) {
+        grid-column: 2;
+    }
+}
+.menu__ingredients {
+    font-family: var(--unnamed-font-family-crimson-pro);
+    font-size: var(--unnamed-font-size-18);
+    line-height: var(--unnamed-line-spacing-28);
+    color: var(---ccc4bc-info-txt);
+    grid-column: 1;
+    grid-row: 2;
+}

@@ -1,0 +1,113 @@
+.footer {
+    background: var(---211e1b-dark-bagcground);
+    color: var(---ccc4bc-info-txt);
+}
+.footer__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding-top: 100px;
+    padding-bottom: 160px;
+    @media (min-width: 768px) {
+        justify-items: center;
+    }
+}
+.footer__title {
+    font: var(--unnamed-font-weight-bold) var(--unnamed-font-size-25) /
+        var(--unnamed-line-spacing-32) var(--unnamed-font-family-merriweather);
+}
+.footer__info {
+}
+.footer__info-title {
+    padding-bottom: 40px;
+}
+.footer__info-description {
+    font: var(--unnamed-font-size-18) / var(--unnamed-line-spacing-20)
+        var(--unnamed-font-family-crimson-pro);
+}
+.footer__kontakt {
+}
+.footer__kontakt-title {
+    padding-bottom: 35px;
+}
+.footer__kontakt-address {
+    padding-bottom: 20px;
+    display: block;
+}
+.footer__kontakt-telefon,
+.footer__kontakt-address {
+    @media (min-width: 1281px) {
+        &:hover {
+            color: var(--unnamed-color-ffffff-hover);
+
+            & .footer__kontakt-svg {
+                fill: var(---ccc4bc-info-txt-hover);
+            }
+        }
+    }
+}
+.footer__kontakt-svg,
+.footer__kontakt-svg-geo-alt,
+.footer__social-svg-facebook,
+.footer__social-svg-instagram,
+.footer__social-svg-twitter {
+    fill: var(---ccc4bc-info-txt);
+}
+.footer__kontakt-svg {
+}
+.footer__kontakt-svg-geo-alt {
+    color: var(---ccc4bc-info-txt);
+}
+.footer__kontakt-telefon {
+}
+.footer__kontakt-svg-telephone {
+}
+.footer__social {
+}
+.footer__social-title {
+    padding-bottom: 30px;
+}
+.footer__social-list {
+    display: flex;
+    gap: 24px;
+}
+.footer__social-svg {
+    width: 60%;
+    text-align: center;
+    fill: var(--unnamed-color-000000);
+}
+.footer__social-wrapper-svg {
+    background-color: var(---ccc4bc-info-txt);
+    width: 60px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+
+    &:has(.footer__social-svg-instagram:hover) {
+        @media (min-width: 1281px) {
+            background: linear-gradient(138deg, #f204d4 0%, #ff8000 100%);
+        }
+    }
+    &:has(.footer__social-svg-twitter:hover) {
+        @media (min-width: 1281px) {
+            background-color: #8bfbff;
+        }
+    }
+}
+.footer__social-svg-facebook {
+    background-color: var(--unnamed-color-000000);
+    fill: var(---ccc4bc-info-txt);
+    width: 100%;
+    border-radius: 50%;
+    @media (min-width: 1281px) {
+        &:hover {
+            fill: #00c2ff;
+        }
+    }
+}
+.footer__social-svg-instagram {
+    border-radius: 30%;
+    background-color: var(---ccc4bc-info-txt);
+}
+.footer__social-svg-twitter {
+}

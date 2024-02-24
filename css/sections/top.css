@@ -1,0 +1,26 @@
+.top {
+    position: relative;
+}
+.top__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 1;
+
+    font: var(--unnamed-font-style-normal) var(--unnamed-font-weight-bold)
+        var(--unnamed-font-size-48) / var(--unnamed-line-spacing-60)
+        var(--unnamed-font-family-merriweather);
+    color: var(--unnamed-color-ffffff);
+
+    @media (min-width: 450px) {
+        font-size: var(--unnamed-font-size-84);
+        line-height: var(--unnamed-line-spacing-106);
+    }
+}
+.top__img {
+    width: 100%;
+    object-fit: cover;
+    height: 340px;
+    opacity: 0.6;
+}

@@ -1,0 +1,54 @@
+.gastro {
+    min-height: 100dvh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    color: var(--unnamed-color-ffffff);
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+    }
+}
+.gastro--pub {
+    background-image: url("../../assets/img/mainsite-waiter.jpg");
+}
+.gastro--mad {
+    background-image: url("../../assets/img/mainSite-food.jpg");
+}
+.gastro--interior {
+    background-image: url("../../assets/img/mainSite-interior01.jpg");
+}
+.gastro__wrapper {
+    width: 100%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: min-content;
+    position: relative;
+    z-index: 2;
+}
+.gastro__title {
+    font: var(--unnamed-font-style-normal) var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/
+    var(--unnamed-line-spacing-60)
+        var(--unnamed-font-family-merriweather);
+    @media (min-width: 450px) {
+        & {
+            font-size: var(--unnamed-font-size-84);
+            line-height: var(--unnamed-line-spacing-106);
+        }
+    }
+}
+.gastro__description {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)
+        var(--unnamed-font-family-crimson-pro);
+}
+.gastro__button {
+    padding: 17px 56px;
+    justify-self: start;
+}

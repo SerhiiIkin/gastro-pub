@@ -1,0 +1,13 @@
+@import "../css/others/reset.css";
+@import "../css/others/single.css";
+@import "../css/others/fonts.css";
+@import "../css/others/variables.css";
+
+@import "../css/component/button-to-top.css";
+@import "../css/component/_form.css";
+
+@import "../css/sections/header.css";
+@import "../css/sections/dialog-bestil.css";
+@import "../css/sections/footer.css";
+@import "../css/sections/top.css";
+@import "../css/sections/galleri.css";
