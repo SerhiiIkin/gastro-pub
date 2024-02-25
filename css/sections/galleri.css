@@ -48,7 +48,18 @@
     top: 15px;
     right: 15px;
     cursor: pointer;
+
     &.active {
+        @media (min-width: 1281px) {
+            &:hover {
+                &::before {
+                    rotate: calc(360deg - 45deg);
+                }
+                &::after {
+                    rotate: calc(360deg + 45deg);
+                }
+            }
+        }
         &::before,
         &::after {
             content: "";
@@ -59,6 +70,7 @@
             translate: -50% -50%;
             width: 100%;
             background-color: var(--unnamed-color-ffffff);
+            transition: rotate 0.5s ease 0s;
         }
         &::before {
             rotate: 45deg;
@@ -69,8 +81,14 @@
     }
     svg {
         fill: var(--unnamed-color-ffffff);
+        transition: scale 0.5s ease 0s;
         &.notactive {
             visibility: hidden;
+        }
+        @media (min-width: 1281px) {
+            &:hover {
+                scale: 1.2;
+            }
         }
     }
 }
@@ -84,6 +102,19 @@
     width: 40px;
     height: 40px;
     top: 50%;
+    transition: all 0.5s ease 0s;
+    @media (min-width: 1281px) {
+        &:hover {
+            background: var(---8a837d-txt-dark-hover);
+            border-radius: 50%;
+        }
+        &:hover {
+            &::before,
+            &::after {
+                background: var(--unnamed-color-ffffff-hover);
+            }
+        }
+    }
     &::before,
     &::after {
         content: "";
@@ -103,6 +134,10 @@
 }
 .galleri__btn--rigth {
     right: 0;
+    &::before,
+    &::after {
+        left: 35%;
+    }
     &::before {
         rotate: 45deg;
     }
