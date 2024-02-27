@@ -79,16 +79,16 @@
             rotate: -45deg;
         }
     }
-    svg {
-        fill: var(--unnamed-color-ffffff);
-        transition: scale 0.5s ease 0s;
-        &.notactive {
-            visibility: hidden;
-        }
-        @media (min-width: 1281px) {
-            &:hover {
-                scale: 1.2;
-            }
+}
+.galleri__zoom svg {
+    fill: var(--unnamed-color-ffffff);
+    transition: scale 0.5s ease 0s;
+    &.notactive {
+        visibility: hidden;
+    }
+    @media (min-width: 1281px) {
+        &:hover {
+            scale: 1.2;
         }
     }
 }

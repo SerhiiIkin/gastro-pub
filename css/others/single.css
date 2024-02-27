@@ -19,14 +19,6 @@
 .label-svg {
     position: relative;
 
-    svg {
-        fill: var(---ccc4bc-info-txt);
-        position: absolute;
-        left: 5%;
-        top: 50%;
-        translate: 0 -50%;
-    }
-
     input:-webkit-autofill,
     input:-webkit-autofill:hover,
     input:-webkit-autofill:focus,
@@ -37,30 +29,40 @@
     input:-webkit-autofill {
         -webkit-text-fill-color: var(---ccc4bc-info-txt) !important;
     }
+}
 
-    input,
-    textarea {
-        background: var(---211e1b-dark-bagcground);
-        width: 100%;
-        padding-left: 55px;
-        padding-block: 10px;
-        border-radius: 30px;
+.label-svg svg {
+    fill: var(---ccc4bc-info-txt);
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    translate: 0 -50%;
+}
+
+.label-svg input,
+textarea {
+    background: var(---211e1b-dark-bagcground);
+    width: 100%;
+    padding-left: 55px;
+    padding-block: 10px;
+    border-radius: 30px;
+    font-size: var(--unnamed-font-size-18);
+    &::placeholder {
+        color: var(---ccc4bc-info-txt);
+        letter-spacing: var(--unnamed-character-spacing-0);
         font-size: var(--unnamed-font-size-18);
-        &::placeholder {
-            color: var(---ccc4bc-info-txt);
-            letter-spacing: var(--unnamed-character-spacing-0);
-            font-size: var(--unnamed-font-size-18);
-        }
     }
 }
 
 .label-svg--besked {
-    textarea {
-        color: var(---ccc4bc-info-txt);
-    }
-    svg {
-        top: 10%;
-    }
+}
+
+.label-svg--besked svg {
+    top: 10%;
+}
+
+.label-svg--besked textarea {
+    color: var(---ccc4bc-info-txt);
 }
 
 .status {

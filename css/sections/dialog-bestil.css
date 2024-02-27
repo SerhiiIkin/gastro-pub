@@ -7,12 +7,13 @@
     translate: 0 -50%;
     color: var(---ccc4bc-info-txt);
     z-index: 20;
-
-    &::backdrop {
-        opacity: 0.6;
-        background: black;
-    }
 }
+
+.dialog-bestil::backdrop {
+    opacity: 0.6;
+    background: black;
+}
+
 .dialog-bestil__wrapper {
     padding: 20px 10px 10px;
     @media (min-width: 590px) {
@@ -52,51 +53,53 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+}
 
-    input[type="date"] {
-        position: relative;
-        &::-webkit-calendar-picker-indicator {
-            background: url(../../assets/svg/calendar.svg) no-repeat;
-            position: absolute;
-            left: 5%;
-        }
-        &::-webkit-datetime-edit-fields-wrapper {
-            opacity: 0;
-            color: var(---ccc4bc-info-txt);
-            letter-spacing: var(--unnamed-character-spacing-0);
-        }
-        &::before {
-            content: "Bestillings Dato *";
-            position: absolute;
-            color: var(---ccc4bc-info-txt);
-            letter-spacing: var(--unnamed-character-spacing-0);
-        }
+.dialog-bestil__form input[type="date"] {
+    position: relative;
+}
 
-        &:focus,
-        &:valid {
-            &::before {
-                content: "";
-            }
-            &::-webkit-datetime-edit-fields-wrapper {
-                opacity: 1;
-            }
-        }
-    }
+.dialog-bestil__form input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url(../../assets/svg/calendar.svg) no-repeat;
+    position: absolute;
+    left: 5%;
+}
+.dialog-bestil__form input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+    opacity: 0;
+    color: var(---ccc4bc-info-txt);
+    letter-spacing: var(--unnamed-character-spacing-0);
+}
+.dialog-bestil__form input[type="date"]::before {
+    content: "Bestillings Dato *";
+    position: absolute;
+    color: var(---ccc4bc-info-txt);
+    letter-spacing: var(--unnamed-character-spacing-0);
+}
+.dialog-bestil__form
+    input[type="date"]:focus::-webkit-datetime-edit-fields-wrapper,
+.dialog-bestil__form
+    input[type="date"]:valid::-webkit-datetime-edit-fields-wrapper {
+    opacity: 1;
+}
 
-    .dialog-bestil__submit {
-        color: var(--unnamed-color-000000);
-        font-family: var(--unnamed-font-family-crimson-pro);
-        font-weight: bold;
-        background: var(---f1b356-btn);
-        border-radius: 27px;
-        padding: 16px 65px;
-        align-self: flex-start;
-        transition: all 0.5s ease;
-        @media (min-width: 1281px) {
-            &:hover {
-                background: var(---f1b356-btn-hover);
-                color: var(--unnamed-color-000000-hover);
-            }
+.dialog-bestil__form input[type="date"]:focus::before,
+.dialog-bestil__form input[type="date"]:valid::before {
+    content: "";
+}
+
+.dialog-bestil__submit {
+    color: var(--unnamed-color-000000);
+    font-family: var(--unnamed-font-family-crimson-pro);
+    font-weight: bold;
+    background: var(---f1b356-btn);
+    border-radius: 27px;
+    padding: 16px 65px;
+    align-self: flex-start;
+    transition: all 0.5s ease;
+    @media (min-width: 1281px) {
+        &:hover {
+            background: var(---f1b356-btn-hover);
+            color: var(--unnamed-color-000000-hover);
         }
     }
 }
